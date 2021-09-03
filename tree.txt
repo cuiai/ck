@@ -1,0 +1,68 @@
+EDA-MAIN-SERVER
+
++-- DOCUMENT：程序数据输出目录（自动生成）
+
++-- src
+
+​      +-- application：应用目录
+
+​            +-- controller：服务端代码
+
+​                 +-- algorithm：算法模块
+
+​                       +-- OpenFace：OpenFace算法
+
+​                             +-- core：动态库目录（根据不同平台编译）
+
+​                             +-- main_au_expressions.py：算法调用主文件
+
+​                       +-- Temperature：红外温度模块
+
+​                       +-- openface.py：OpenFace线程
+
+​                       +-- temperature.py：红外温度线程
+
+​                       +-- voice_intensity.py：声强线程
+
+                 +-- detail：审讯详情数据
+
+​                 +-- encrypt：加密模块
+
+                 +-- report：审讯报告模块
+
+                 +-- tools：工具方法
+                        +-- async_call.py：异步方法
+                        +-- ffmpeg_record.py：录制视频方法
+                        +-- timed_task.py：定时任务
+                        +-- uploadFile.py：上传服务器文件
+
+                 +-- web_server：HTTP/WEBSOCKET 服务器
+
+​                 +-- camera.py：视频解码（OpenCV）
+
+​                 +-- common.py：后台通用工具
+
+​                 +-- computer_status.py：主机状态模块
+
+​                 +-- config.py：后台全局变量
+
+​                 +-- mic.py：音频解码（VLC）
+
+​                 +-- status_server.py：客户端连接监测（没有连接自动退出服务）
+
+​            +-- model：数据库相关
+                +-- data_writing.py: 数据存库，可疑值规则，告警规则， 向bm端发送数据等业务逻辑
+                +-- delete_data.py: 无用
+                +-- model_data.py:  sqlite 数据入库，更新，删除等操作
+
+​            +-- public_tools：通用工具
+
+​            +-- resources：资源文件
+
+​      +-- conf：配置文件
+
++-- .gitignore
+
++-- README.md
+
++-- requirements.txt
